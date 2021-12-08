@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cinq_essais.css">
+    <script src="cinq_essais.js"></script>
+    <title>CINQ ESSAIS</title>
+</head>
+<body>
+    <div class="main" name="main">
+        
+        <div class="tete">
+            <a href="nouvelle_partie.html" class="retour">◄ RETOUR</a>
+            
+            <input type="checkbox"  id="regle">
+            
+            <label for="regle" class="regles">
+                    Règles du jeu <br>
+
+                    L'ordinateur choisit un chiffre aléatoire entre 0 et 99 <br>
+                    Vous avez cinq essais pour deviner ce chiffre <br>
+                    Au delà des cinq essais, vous perdrez dix points par mauvaise reponse <br>
+                    Au debut de la partie, vous avez 100 points <br>
+                    Si votre score atteint 0, vous avez perdu :( <br>
+                    Top c'est parti <br>
+                    <span class="masquer">Cliquer pour masquer</span>
+            </label>
+        </div>
+
+        <div class="corps" name="corps">
+            <div class="commencer" onclick="tempo()" id="commencer">COMMENCER MAINTENANT</div>
+
+            <form action="">
+                <div class="affiche ecran" >
+                    <div class="nombre">Nombre</div>
+                    <div id="ecran">?</div>
+                </div>
+                <div class="affiche timer">
+                    <div class="temps">Temps</div>
+                    <div id="timer">0s</div>
+                </div>
+                <div class="affiche le_score">
+                    <div class="score">Score</div>
+                    <div id="score">100</div>
+                </div>
+                <div class="affiche les_essais">
+                    <div class="essais">Essais</div>
+                    <div id="essais">0</div>
+                </div>
+                <input type="text" class="affiche saisie" id="client" placeholder="Saisissez ici ...">
+                <input type="button" class="valider" value="VERIFIER" onclick="clic()">
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
