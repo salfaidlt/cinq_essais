@@ -82,6 +82,7 @@ function clic()
 
         if(score <=0)
         {
+            score = 0;
             document.getElementById("commencer").innerHTML = "Perdu !!";
             alert("Vous avez perdu :(");
             r = setTimeout(recommencer, 2000);
