@@ -78,7 +78,7 @@ function clic()
             clearTimeout(t);
             document.getElementById("commencer").innerHTML = "Gagné !!";
             alert("Vous avez trouvé " + nombre_random + " en " + essais + " essais")
-            //setTimeout(recommencer, 5000);
+            setTimeout(recommencer, 5000);
         }
 
         if(score <=0)
@@ -86,7 +86,7 @@ function clic()
             score = 0;
             document.getElementById("commencer").innerHTML = "Perdu !!";
             alert("Vous avez perdu :(");
-            //r = setTimeout(recommencer, 5000);
+            r = setTimeout(recommencer, 5000);
 
         }
     }
